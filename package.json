@@ -17,6 +17,7 @@
     "format:prettier": "cd .scripts && pnpm format:prettier ../src"
   },
   "dependencies": {
+    "dotenv": "^16.0.3",
     "pocketbase": "^0.7.0"
   },
   "devDependencies": {
