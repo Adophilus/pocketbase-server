@@ -6,8 +6,8 @@
   "main": "build/main.js",
   "scripts": {
     "start": "env $(cat .env | xargs) bin/start",
-    "init": "node build/init.js",
-    "setup": "bin/setup",
+    "db:init": "node build/init.js",
+    "db:setup": "bin/setup",
     "dev": "nodemon",
     "build": "ttsc --project tsconfig.json",
     "local:workflow": "bin/workflow.sh",
