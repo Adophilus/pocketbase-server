@@ -1,0 +1,22 @@
+{
+  "include": ["src/main.ts"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["*"]
+    },
+    "plugins": [
+      { "transform": "typescript-transform-paths" },
+      {
+        "transform": "@build-script/typescript-transformer-dual-package"
+      }
+    ],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "allowUnreachableCode": false,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "target": "ESNext",
+    "outDir": "build"
+  }
+}
